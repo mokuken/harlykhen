@@ -132,7 +132,23 @@ main {
 
 .about-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
   height: 90vh;
+}
+
+.techs {
+  display: flex;
+  justify-content: center;
+}
+
+.techs ul li {
+  list-style: none;
+}
+
+.techs > div {
+  width: 100%;
+  padding-left: 10px;
+  border-left: 2px solid black;
+  border-top-left-radius: 10px;
 }
