@@ -42,14 +42,22 @@ main {
 }
 
 .home-container {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 5fr 0.5fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   height: 90vh;
+  align-items: center;
+}
+  
+.hero { 
+  grid-area: 1 / 1 / 2 / 2; 
+  font-size: larger;
 }
 
-.hero {
-  width: auto;
-  font-size: larger;
+.hero p{
+  width: 80%;
 }
 
 .button {
@@ -77,21 +85,19 @@ main {
   margin-right: 10px;
 }
 
-.social {
-  width: 50%;
-  display: flex;
-  justify-content: flex-end;
+.socials {
+  grid-area: 1 / 2 / 2 / 3;
 }
 
-.icons {
+.socials .icons {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  font-size: 25px;
+  text-align: right;
+  font-size: 30px;
 }
 
-.social .icons a {
-  padding: 10px;
+.socials .icons a {
+  padding: 5px 0;
   font-weight: bold;
   text-decoration: none;
   color: black;

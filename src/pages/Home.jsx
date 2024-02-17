@@ -5,7 +5,7 @@ function Home() {
   return (
     <div className='home-container'>
         <div className="hero">
-            <h1>Hello There I'm Harly Khen</h1>
+            <h1>Hello there I'm Harly Khen</h1>
             <div className="profession">
                 <hr/>
                 <h3>Full Stack Developer</h3>
@@ -14,7 +14,7 @@ function Home() {
             <button className="button">Contact Info</button>
             <button className="button">Download CV</button>
         </div>
-        <div className="social">
+        <div className="socials">
             <div className="icons">
                 <a href="#"><FontAwesomeIcon icon={faSquareFacebook} /></a>
                 <a href="#"><FontAwesomeIcon icon={faLinkedin} /></a>
