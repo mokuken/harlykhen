@@ -20,6 +20,8 @@ nav {
   overflow: hidden;
   padding: 0 150px;
   height: 10vh;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav a {
@@ -31,8 +33,7 @@ nav a {
   color: #000;
 }
 
-nav a.left {
-  float: left;
+nav div:first-child a, nav a.active {
   font-weight: bold;
 }
 
@@ -148,7 +149,4 @@ main {
 
 .techs > div {
   width: 100%;
-  padding-left: 10px;
-  border-left: 2px solid black;
-  border-top-left-radius: 10px;
 }
