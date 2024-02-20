@@ -22,19 +22,31 @@ nav {
   height: 10vh;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 nav a {
-  float: right;
-  display: block;
-  text-align: center;
   padding: 20px;
   text-decoration: none;
   color: #000;
 }
 
+nav div {
+  display: flex;
+  align-items: center;
+}
+
 nav div:first-child a, nav a.active {
   font-weight: bold;
+}
+
+nav div button {
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  padding: 0 5px;
+  font-size: 25px;
+  cursor: pointer;
 }
 
 main {
@@ -175,4 +187,50 @@ main {
 
 .techs > div {
   width: 100%;
+}
+
+.dark-mode {
+  background-color: #18181b;
+  transition: background-color 0.5s ease-in-out;
+
+  * {
+    color: white;
+  }
+
+  .profession hr {
+    background-color: white;
+  }
+
+  .repo-box {
+    border: 1px solid #7d7d85;
+  }
+
+  .repo-box h2 a {
+    color: white;
+  }
+
+  .repo-box p {
+    color: #7d7d85;
+  }
+
+  .button {
+    background-color: #222;
+    border: 1px solid #7d7d85;
+  }
+
+  .hero p {
+    color: #7d7d85;
+  }
+
+  .about-container h2 {
+    color: #7d7d85;
+  }
+
+  .techs div ul li {
+    color: #7d7d85;
+  }
+}
+
+body {
+  transition: background-color 0.5s ease-in-out;
 }

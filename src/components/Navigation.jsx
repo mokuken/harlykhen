@@ -1,4 +1,5 @@
 import { Link, useMatch, useResolvedPath } from 'react-router-dom'
+import DarkMode from './DarkMode';
 
 const Navigation = () => {
   return (
@@ -7,9 +8,10 @@ const Navigation = () => {
           <a>Harly Khen Quimelat</a>
         </div>
         <div>
-          <CustomLink to="/Projects">Projects</CustomLink>
-          <CustomLink to="/About">About</CustomLink>
           <CustomLink to="/">Home</CustomLink>
+          <CustomLink to="/About">About</CustomLink>
+          <CustomLink to="/Projects">Projects</CustomLink>
+          <DarkMode/>
         </div>
       </nav>
   );
