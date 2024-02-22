@@ -2,7 +2,7 @@
   "name": "harlykhen",
   "homepage": "https://mokuken.github.io/harlykhen",
   "private": true,
-  "version": "0.0.0",
+  "version": "2.22.24",
   "type": "module",
   "scripts": {
     "dev": "vite",
