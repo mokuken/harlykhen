@@ -57,7 +57,7 @@ main {
 
 .home-container {
   display: grid;
-  grid-template-columns: 0.5fr 5fr 2fr; /* Layout with space for the profile image */
+  grid-template-columns: 5fr 2fr 0.5fr; /* Moved the profile image to the left and socials to the right */
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -66,11 +66,11 @@ main {
 }
 
 .hero { 
-  grid-area: 1 / 2 / 2 / 3; /* Hero section in the second column */
+  grid-area: 1 / 1 / 2 / 2; /* Hero section in the first column */
   font-size: larger;
 }
 
-.hero p{
+.hero p {
   width: 95%;
 }
 
@@ -89,6 +89,8 @@ main {
 .profession {
   display: flex;
   align-items: center;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
 }
 
 .profession hr {
@@ -100,11 +102,11 @@ main {
 }
 
 .socials {
-  grid-area: 1 / 1 / 2 / 2; /* Socials section in the first column */
+  grid-area: 1 / 3 / 2 / 4; /* Socials section in the third column (moved to the right) */
 }
 
 .profile {
-  grid-area: 1 / 3 / 2 / 4; /* New grid area for the profile image in the third column */
+  grid-area: 1 / 2 / 2 / 3; /* Profile image moved to the second column */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,11 +120,10 @@ main {
   border-radius: 10px; /* Optional styling */
 }
 
-
 .socials .icons {
   display: flex;
   flex-direction: column;
-  text-align: left;
+  text-align: right;
   font-size: 30px;
 }
 
