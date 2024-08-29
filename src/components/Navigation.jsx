@@ -5,7 +5,7 @@ const Navigation = () => {
   return (
       <nav>
         <div>
-          <a>Harly Khen Quimelat</a>
+          <p className='markName'>Harly Khen Quimelat</p>
         </div>
         <div>
           <CustomLink to="/">Home</CustomLink>

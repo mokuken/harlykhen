@@ -9,11 +9,26 @@
   src: url('./assets/fonts/Poppins-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Aquire';
+  src: url('./assets/fonts/AquireBold.otf') format('truetype');
+}
+
 #root {
   font-family: Poppins;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.markName {
+  font-family: Aquire;
+  height: 50px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
 }
 
 nav {
@@ -26,7 +41,10 @@ nav {
 }
 
 nav a {
-  padding: 20px;
+  height: 50px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: #000;
 }
@@ -38,6 +56,7 @@ nav div {
 
 nav div:first-child a, nav a.active {
   font-weight: bold;
+  border-bottom: 1px solid black;
 }
 
 nav div button {
@@ -71,7 +90,7 @@ main {
 }
 
 .hero p {
-  width: 95%;
+  width: 100%;
 }
 
 .button {
@@ -95,7 +114,7 @@ main {
 
 .profession hr {
   width: 50px;
-  height: 2px;
+  height: 0.5px;
   background-color: black;
   border: none;
   margin-right: 10px;
@@ -111,7 +130,8 @@ main {
   justify-content: center;
   align-items: center;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  width: 350px;
+  width: 300px;
+  margin: 0 25px;
 }
 
 .profile img {
@@ -123,7 +143,7 @@ main {
 .socials .icons {
   display: flex;
   flex-direction: column;
-  text-align: right;
+  text-align: center;
   font-size: 30px;
 }
 
@@ -213,6 +233,11 @@ main {
 
   * {
     color: white;
+  }
+
+  nav div:first-child a, nav a.active {
+    font-weight: bold;
+    border-bottom: 1px solid white;
   }
 
   .profession hr {

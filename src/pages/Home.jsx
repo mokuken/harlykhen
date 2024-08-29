@@ -18,7 +18,10 @@ function Home() {
                     <hr/>
                     <h3>Full Stack Developer</h3>
                 </div>
-                <p>I'm a Computer Science Student in the Philippines, and I'm very passionate and dedicated to my work.</p>
+                <p>
+                    I'm a Computer Science Student in the Philippines, and<br/>
+                    I'm very passionate and dedicated to my work.
+                </p>
                 <button className="button">Contact Info</button>
                 <button className="button">Download CV</button>
             </div>
