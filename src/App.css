@@ -52,26 +52,26 @@ nav div button {
 
 main {
   overflow-y: auto;
-  padding: 0 250px;
+  padding: 0 200px;
 }
 
 .home-container {
   display: grid;
-  grid-template-columns: 5fr 0.5fr;
+  grid-template-columns: 0.5fr 5fr 2fr; /* Layout with space for the profile image */
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   height: 90vh;
   align-items: center;
 }
-  
+
 .hero { 
-  grid-area: 1 / 1 / 2 / 2; 
+  grid-area: 1 / 2 / 2 / 3; /* Hero section in the second column */
   font-size: larger;
 }
 
 .hero p{
-  width: 80%;
+  width: 95%;
 }
 
 .button {
@@ -100,13 +100,29 @@ main {
 }
 
 .socials {
-  grid-area: 1 / 2 / 2 / 3;
+  grid-area: 1 / 1 / 2 / 2; /* Socials section in the first column */
 }
+
+.profile {
+  grid-area: 1 / 3 / 2 / 4; /* New grid area for the profile image in the third column */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  width: 350px;
+}
+
+.profile img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional styling */
+}
+
 
 .socials .icons {
   display: flex;
   flex-direction: column;
-  text-align: right;
+  text-align: left;
   font-size: 30px;
 }
 
@@ -215,8 +231,9 @@ main {
   }
 
   .button {
-    background-color: #222;
-    border: 1px solid #7d7d85;
+    background-color: #fff;
+    color: black;
+    font-weight: bold;
   }
 
   .hero p {
