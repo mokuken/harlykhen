@@ -9,7 +9,7 @@ function Projects() {
           <div>
             <h3>Languages</h3>
             <ul>
-              <li>JavaScript + node.js</li>
+              <li>JavaScript</li>
               <li>PHP</li>
               <li>CSS</li>
               <li>Java</li>
