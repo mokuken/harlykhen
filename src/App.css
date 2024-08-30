@@ -388,6 +388,10 @@ body {
     border-bottom: 1px solid white;
   }
 
+  nav .menu.open {
+    z-index: 1;
+  }
+
   .home-container {
     padding: 0 10px;
     animation: none;
