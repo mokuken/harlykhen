@@ -71,18 +71,31 @@ nav div button {
 
 main {
   overflow-y: auto;
+}
+
+.home-container, .about-container, .project-container  {
   padding: 0 200px;
 }
 
-  .home-container {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    height: 90vh;
-    align-items: center;
+.home-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 90vh;
+  align-items: center;
+  animation: paddingAnimation 0.5s ease forwards;
+}
+
+@keyframes paddingAnimation {
+  from {
+      padding: 0 100px;
   }
+  to {
+      padding: 0 200px;
+  }
+}
 
 .hero { 
   grid-area: 1 / 1 / 11 / 6; /* Hero section in the first column */
