@@ -5,13 +5,6 @@ import profile from '../assets/images/profile.png';
 function Home() {
     return (
         <div className='home-container'>
-            <div className="socials">
-                <div className="icons">
-                    <a href="#"><FontAwesomeIcon icon={faSquareFacebook} /></a>
-                    <a href="#"><FontAwesomeIcon icon={faLinkedin} /></a>
-                    <a href="#"><FontAwesomeIcon icon={faSquareGithub} /></a>
-                </div>
-            </div>
             <div className="hero">
                 <h1>Hello there I'm Harly Khen</h1>
                 <div className="profession">
@@ -26,6 +19,13 @@ function Home() {
             </div>
             <div className="profile">
                 <img src={profile} alt="Profile" />
+            </div>
+            <div className="socials">
+                <div className="icons">
+                    <a href="#"><FontAwesomeIcon icon={faSquareFacebook} /></a>
+                    <a href="#"><FontAwesomeIcon icon={faLinkedin} /></a>
+                    <a href="#"><FontAwesomeIcon icon={faSquareGithub} /></a>
+                </div>
             </div>
         </div>
     )
