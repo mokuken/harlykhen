@@ -18,7 +18,6 @@ const Navigation = () => {
         <button className="hamburger" onClick={toggleMenu}>
           <FontAwesomeIcon icon={faBars} />
         </button>
-        
       </div>
       <div className={`menu ${isOpen ? 'open' : ''}`}>
         <CustomLink to="/">Home</CustomLink>
