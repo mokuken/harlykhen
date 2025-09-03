@@ -13,6 +13,7 @@ function Projects() {
               <li>PHP</li>
               <li>CSS</li>
               <li>Java</li>
+              <li>Python</li>
             </ul>
           </div>
           <div>
@@ -29,6 +30,7 @@ function Projects() {
             <ul>
               <li>Vite</li>
               <li>React</li>
+              <li>Flask</li>
             </ul>
           </div>
         </div>
